@@ -60,3 +60,16 @@
 .info li + li {
     border-top: 1px solid var(--white-3);
 }
+
+.asa-delta {
+    background: var(--white-2);
+}
+
+/* GALERIA */
+
+.galeria {
+    width: 100%;
+    background: var(--white-2);
+    text-align: center;
+    
+}
