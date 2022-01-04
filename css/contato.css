@@ -22,6 +22,126 @@
     text-align: left;
 }
 
-.wpp {
+/* ATEDIMENTO*/
+
+.atendimento {
+    width: 100%;
+    background: var(--white-2);
+
+}
+
+.atendimento-container {
+    display: grid;
+    grid-template-columns: minmax(250px, 550px) minmax(250px, 1fr);
+    gap: 4rem;
+
+}
+
+.form {
+    background: var(--white-1);
+    border: 1px solid var(--white-3);
+    border-radius: 5px;
+    padding: 2rem;
+    max-width: 480px;
+    box-sizing: border-box;
+}
+
+.form label, form input, .form select, .form textarea, .form button {
+    display: block;
+    width: 100%;
+}
+
+.form label {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+}
+
+.form input, .form select {
+    margin-bottom: 1rem;
+}
+
+.form input, .form select, .from textarea {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.125rem;
+    color: var(--black-1);
+    padding: 1rem;
+    box-sizing: border-box;
+    border: 1px solid var(--white-3);
+    border-radius: 5px;
+    background: #fff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.form textarea {
+    max-width: 100%;
+    height: 200px;
+    resize: vertical
+}
+
+.form button {
+    border: none;
+    cursor: pointer;
+}
+
+.select {
+    position: relative;
+}
+
+.select::after {
+    content: '';
+    display: inline-block;
+    width: 1rem;
+    height: 0.5rem;
+    background: url('../img/arrow.svg') no-repeat center center;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translate3d(0, -50%, 0);
+    pointer-events: none;
+}
+
+.dados h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+
+}
+
+.dados h2:first-child {
+    margin-top: 0px;
+}
+
+.dados a, .dados p {
+    font-size: 1.125rem;
+    font-style: italic;
+    counter-reset: var(--black-2);
+    opacity: 0.8;
+}
+
+.dados li + li {
+    margin-top: 1rem;
+
+}
+
+.dados a:hover {
+    text-decoration: underline;
+}
+
+.mapa p {
+    font-size: 1.125rem;
+    font-style: italic;
+    margin-bottom: 1rem;
     text-align: center;
+}
+
+.mapa img {
+    border-radius: 5px;
+    transition: 03s ease;
+}
+
+.mapa img:hover {
+    opacity: 0.6;
 }

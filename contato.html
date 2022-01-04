@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/sobre.css">
     <link rel="stylesheet" href="css/passeios.css">
     <link rel="stylesheet" href="css/contato.css">
+    <link rel="stylesheet" href="css/trabalhe-conosco.css">
 
     <title>Blue Heaven | Contato</title>
 </head>
@@ -50,17 +51,22 @@
         <div class="container">
             <h1 class="titulo">atendimento personalizado</h1>
             <div class="atendimento-container">
-                <form action="">
+                <form class="form">
                     <label for="Nome">Nome</label>
                         <input type="text" name="nome" id="nome">
                     <label for="email">E-mail</label>
                         <input type="email" name="mail" id="email">
                         <label for="passeios">Passeios</label>
-                        <select name="passeios" id="passeios">
-                            <option value="paraquedas">Paraquedas</option>
-                            <option value="asa-delta">Asa-delta</option>
-                            <option value="Balonismo">Balonismo</option>
-                        </select>
+
+                        <div class="select">
+                            <select name="passeios" id="passeios">
+                                <option value="" disabled  selected hidden></option>
+                                <option value="paraquedas">Paraquedas</option>
+                                <option value="asa-delta">Asa-delta</option>
+                                <option value="Balonismo">Balonismo</option>
+                            </select>
+                        </div>
+
                         <label for="mensagem">mensagem</label>
                         <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
                         <button class="cta" type="submit" name="enviar" id="enviar">Enviar</button>
@@ -93,15 +99,18 @@
             </div>
         </div>
     </section>
-   
+   <section class="container map">
+    <h1 class="titulo">Visualizar no Mapa</h1>
+    <p>Clique sobre o mapa para abrir no aplicativo Google maps.</p>
+    <a href="https://www.google.com" target="_blank"><img src="img/mapa.jpg" alt="mapa"></a>
+   </section>
 
-    <footer class="footer">
+   <footer class="footer">
         <div class="container">
             <ul class="footer-container">
                 <li>
                     <h2>Localizacao</h2>
                     <p>Rua Céu Azul, 123 <br> Bairro das Nuvens <br> Sao Paulo - SP 
-                    Clique aqui para abrir o mapa.
                     </p>
                     <a href="#">Clique aqui para descobrir no mapa.</a>
                 </li>
@@ -112,7 +121,7 @@
                         <li><a href="sobre.html">- Sobre</a> </li>
                         <li><a href="passeios.html">- Passeios</a></li>
                         <li><a href="contatos.html">- Contatos</a></li>
-                        <li><a href="trabalhe.conosco"></a> - Trabalhe conosco</li>
+                        <li><a href="trabalhe-conosco.html">- Trabalhe Conosco</a></li>
                     </ul>
                 </li>
                 <li>
