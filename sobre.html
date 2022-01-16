@@ -9,20 +9,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
+    <meta name="description" content="Agende salto de paraquedas, voo de asa-delta e passeio de balão." />
+    <meta property="og:title" content="Blue Heaven | sobre" />
+    <meta property="og:description" content="Agende salto de paraquedas, voo de asa-delta e passeio de balão." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.tigercodes.com.br/projetos/blue-heaven/" />
+    <meta property="og:image" content="https://www.tigercodes.com.br/projetos/blue-heaven/img/og-blue-heaven.png" />
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/sobre.css">
     <link rel="stylesheet" href="css/trabalhe-conosco.css">
+    <link rel="stylesheet" href="css/responsivo.css">
 
+    <script>document.documentElement.classList.add("js");</script>
 
-    <title>Blue Heaven</title>
+    <title>Blue Heaven | sobre</title>
 </head>
 
 <body>
     <header class="header">
         <nav class="container header-container">
             <a href="./"> <img src="img/blue-heaven.svg" alt="Logo da Blue blue-heaven"></a>
-            <ul>
+            <button data-menu="hamburguer" aria-controls="menu">Menu</button>
+            <ul data-menu="lista" id="menu">
                 <li><a class="ativo" href="./">Home</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="passeios.html">Passeios</a></li>
@@ -31,14 +43,15 @@
             </ul>
         </nav>
     </header>
-    <section class="main sobre">
-        <div class="container">
+
+    <section class="main-home sobre">
+        <div class="container" data-animate="scroll">
             <h1>Sobre</h1>
             <p>Conheca a Blue Heaven.</p>
         </div>
     </section>
 
-    <section class="container">
+    <section class="container" data-animate="scroll">
             <h1 class="titulo">Prazer, somos a Blue Heaven</h1>
             <div class="sobre-container">
                 <img src="img/blue-heaven-logo.svg" alt="blue haven">
@@ -51,7 +64,7 @@
     </section>
 
     <section class="mvv">
-        <ul class="mvv-lista container">
+        <ul class="mvv-lista container" data-animate="scroll">
             <li>
                 <h2>Missao</h2>
                 <p>Proporcionar experiencia inesqueciveis para as pessoas atraves dos esportes aereos e inspira-las a realizar seus mais altos sonhos.</p>
@@ -67,9 +80,8 @@
         </ul>
     </section>
    
-
     <section class="depoimentos">
-        <div class="container">
+        <div class="container" data-animate="scroll">
             <h1 class="titulo">Depoimentos dos clientes</h1>
             <ul class="depoimentos-lista">
                 <li>
@@ -108,7 +120,13 @@
             <a class="cta" href="contato.html">Contato</a>
         </div>
     </section>
-
+    <section class="agende">
+        <div class="container" data-animate="scroll">
+            <h2 class="titulo">Agende seu passeio</h2>
+            <p>Esta esperando o que? Agende agora mesmo um passeio de sua preferencia e tenha uma memoria inesquecivel na sua vida.</p>
+            <a class="cta" href="contato.html">Agendar</a>
+        </div>
+    </section>
     <footer class="footer">
         <div class="container">
             <ul class="footer-container">
@@ -151,5 +169,6 @@
             <p>Este site é um projeto Tiger Codes. Mais informacoes em tigercodes.com.br</p>
         </div>
     </footer>
+    <script src="./js/script.js" type="module"></script>
 </body>
 </html>

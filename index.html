@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta name="description" content="Agende salto de paraquedas, voo de asa-delta e passeio de balão." />
+    <meta property="og:title" content="Blue Heaven | Descubra a sensação de voar." />
+    <meta property="og:description" content="Agende salto de paraquedas, voo de asa-delta e passeio de balão." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.tigercodes.com.br/projetos/blue-heaven/" />
+    <meta property="og:image" content="https://www.tigercodes.com.br/projetos/blue-heaven/img/og-blue-heaven.png" />
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
@@ -12,32 +20,35 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/trabalhe-conosco.css">
+    <link rel="stylesheet" href="css/responsivo.css">
 
+    <script>document.documentElement.classList.add("js");</script>
 
-    <title>Blue Heaven</title>
+    <title>Blue Heaven | Descubra  a sensacao de voar.</title>
 </head>
 
 <body>
     <header class="header">
         <nav class="container header-container">
             <a href="./"> <img src="img/blue-heaven.svg" alt="Logo da Blue blue-heaven"></a>
-            <ul>
-                <li><a class="ativo" href="./">Home</a></li>
+            <button data-menu="hamburguer" aria-controls="menu">Menu</button>
+            <ul data-menu="lista" id="menu">
+                <li><a href="index.html" class="ativo" id="alinhar" >Home</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="passeios.html">Passeios</a></li>
                 <li><a href="contato.html">contato</a></li>
             </ul>
         </nav>
     </header>
-    <main class="main">
-        <div class="container">
+    <main class="main-home">
+        <div class="container" data-animate="scroll">
             <h1>Descubra a sensacao de voar</h1>
             <p>Salto de paraquedas, voo de asa-delta e passeio de balao.</p>
             <a class="cta" href="contato.html">Agendar</a>
         </div>
     </main>
 
-    <section class="passeios-home container">
+    <section class="passeios-home container" data-animate="scroll">
         <h1 class="titulo">Conheca os passeios</h1>
         <ul class="passeios-home-lista">
             <li>
@@ -52,15 +63,14 @@
             </li>
             <li>    
                 <h2>Balonismo</h2>
-                <p>O balonismo é um desporto aeronáutico praticado com um balao de ar quente. No Brasil, o esporte comecou a popularizar-se a partir dos anos 90. <a href="passeios.html">Saiba Mais</a></p>
-                
+                <p>O balonismo é um desporto aeronáutico praticado com um balao de ar quente. No Brasil, o esporte comecou a popularizar-se a partir dos anos 90. <a href="passeios.html">Saiba Mais</a></p> 
             </li>
         </ul>
         <a class="cta" href="passeios.html">Ver todos</a>
     </section>
 
     <section class="depoimentos-home">
-        <div class="container">
+        <div class="container" data-animate="scroll">
             <h1 class="titulo">Depoimentos dos clientes</h1>
             <ul class="depoimentos-lista">
                 <li>
@@ -99,7 +109,7 @@
         </div>
     </section>
 
-    <section class="galeria-home container">
+    <section class="galeria-home container" data-animate="scroll">
         <h1 class="titulo">Galeria de fotos</h1>
         <ul class="galeria-lista">
             <li><img src="img/paraquedas.jpg" alt="balonismo"></li>
@@ -111,11 +121,11 @@
     </section>
 
     <section class="sobre-home">
-        <div class="container">
+        <div class="container" data-animate="scroll">
             <h1 class="titulo">SObre a empresa</h1>
             <div class="sobre-container">
                 <img src="img/blue-heaven-logo.svg" alt="blue haven">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo odit nemo eligendi animi. Cumque cum temporibus dolorem placeat? Maiores, quasi similique quis cupiditate rem tempora nihil veritatis ab quisquam cumque.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. temporibus dolorem placeat? veritatis ab quisquam cumque.</p>
             </div>
 
             <blockquote class="sobre-quote">
@@ -168,5 +178,6 @@
             <p>Este site é um projeto Tiger Codes. Mais informacoes em tigercodes.com.br</p>
         </div>
     </footer>
+    <script src="./js/script.js" type="module"></script>
 </body>
 </html>

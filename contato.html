@@ -9,12 +9,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
+    <meta name="description" content="Agende salto de paraquedas, voo de asa-delta e passeio de balão." />
+    <meta property="og:title" content="Blue Heaven | contato" />
+    <meta property="og:description" content="Agende salto de paraquedas, voo de asa-delta e passeio de balão." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.tigercodes.com.br/projetos/blue-heaven/" />
+    <meta property="og:image" content="https://www.tigercodes.com.br/projetos/blue-heaven/img/og-blue-heaven.png" />
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/sobre.css">
     <link rel="stylesheet" href="css/passeios.css">
     <link rel="stylesheet" href="css/contato.css">
     <link rel="stylesheet" href="css/trabalhe-conosco.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+
+    <script>document.documentElement.classList.add("js");</script>
 
     <title>Blue Heaven | Contato</title>
 </head>
@@ -22,7 +34,8 @@
     <header class="header">
         <nav class="container header-container">
             <a href="./"> <img src="img/blue-heaven.svg" alt="Logo da Blue blue-heaven"></a>
-            <ul>
+            <button data-menu="hamburguer" aria-controls="menu">Menu</button>
+            <ul data-menu="lista" id="menu">
                 <li><a href="./">Home</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
                 <li><a  href="passeios.html">Passeios</a></li>
@@ -30,14 +43,14 @@
             </ul>
         </nav>
     </header>
-    <section class="main contato">
-        <div class="container">
+    <section class="contato-main">
+        <div class="container" data-animate="scroll">
             <h1>Contato</h1>
             <p>Agende passeios. Envie sua mensagem</p>
         </div>
     </section>
 
-    <section class="container wpp">
+    <section class="container wpp" data-animate="scroll">
         <h1 class="titulo">Agende pelo whatsapp</h1>
         <div class="wpp-box">
             <img src="img/whatsapp-logo.svg" alt="whatsapp blue-heaven">
@@ -48,18 +61,18 @@
     </section>
 
     <section class="atendimento">
-        <div class="container">
+        <div class="container" data-animate="scroll">
             <h1 class="titulo">atendimento personalizado</h1>
             <div class="atendimento-container">
-                <form class="form">
+            <form method="POST" action="./send.php" class="form formjs">
                     <label for="Nome">Nome</label>
-                        <input type="text" name="nome" id="nome">
+                        <input type="text" name="nome" id="nome" required>
                     <label for="email">E-mail</label>
-                        <input type="email" name="mail" id="email">
-                        <label for="passeios">Passeios</label>
+                        <input type="email" name="mail" id="email" required>
+                        <label for="passeio">Passeios</label>
 
                         <div class="select">
-                            <select name="passeios" id="passeios">
+                            <select name="passeio" id="passeio" required>
                                 <option value="" disabled  selected hidden></option>
                                 <option value="paraquedas">Paraquedas</option>
                                 <option value="asa-delta">Asa-delta</option>
@@ -68,7 +81,7 @@
                         </div>
 
                         <label for="mensagem">mensagem</label>
-                        <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+                        <textarea name="mensagem" id="mensagem" required></textarea>
                         <button class="cta" type="submit" name="enviar" id="enviar">Enviar</button>
                 </form>
                 <div class="dados">
@@ -79,9 +92,9 @@
                         <h2>Siga-nos nas redes Sociais</h2>
                     </ul>
                     <ul>
-                        <li><a href="https://www.facebook.com" target="_blank"></a>Facebook.com</li>
+                        <li><a href="https://www.facebook.com" target="_blank">Facebook.com</a></li>
                         <li>
-                            <a href="https://instagram.com" target="_blank">instagram.com</a>
+                            <a href="https://www.instagram.com" target="_blank">instagram.com</a>
                         </li>
                         <li>
                             <a href="https://www.youtube.com" target="_blank">youtube.com</a>
@@ -99,7 +112,7 @@
             </div>
         </div>
     </section>
-   <section class="container map">
+   <section class="container map" data-animate="scroll">
     <h1 class="titulo">Visualizar no Mapa</h1>
     <p>Clique sobre o mapa para abrir no aplicativo Google maps.</p>
     <a href="https://www.google.com" target="_blank"><img src="img/mapa.jpg" alt="mapa"></a>
@@ -147,5 +160,6 @@
             <p>Este site é um projeto Tiger Codes. Mais informacoes em tigercodes.com.br</p>
         </div>
     </footer>
+    <script src="./js/script.js" type="module"></script>
 </body>
 </html>

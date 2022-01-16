@@ -21,8 +21,6 @@ body {
     color: var(--black-1);
 }
 
-
-
 h1, h2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
@@ -49,6 +47,11 @@ img {
     margin-right: auto;
     padding-left: 1rem;
     padding-right: 1rem;
+}
+
+.galeria-home {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 
 .cta {
@@ -88,7 +91,7 @@ img {
     height: 26.5px;
     padding: 1.25rem 0;
     background-image: linear-gradient(135deg, var(--blue1), var(--blue3));
-    z-index: 100;
+    z-index: 10;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.16);
 }
 
@@ -127,11 +130,11 @@ img {
 
 /*MAIN*/
 
-.main {
+.main-home {
     margin-top: 67.4px;
     width: 100%;
     height: 500px;
-    background: url("../img/bg-home.jpg") no-repeat center;
+    background: url("../img/bg-home.jpg") no-repeat center center;
     background-size: cover;
     color: #fff;
     text-align: center;
@@ -161,6 +164,8 @@ img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
+    
+   
 }
 
 .passeios-home-lista li {
@@ -174,12 +179,14 @@ img {
     font-size: 1.125rem;
     color: #fff;
     text-transform: uppercase;
-    background: url("../img/paraquedas-home.jpg") no-repeat center center;
     height: 200px;
-    border-radius: 5px 5px 0 0;
+    background: url("../img/paraquedas-home.jpg") no-repeat center center;
+    
+    border-radius: 5px 5px 0px 0px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0px;
 }
 
 .passeios-home-lista li:nth-child(2) h2 {
@@ -394,4 +401,124 @@ img {
     font-family: 'Poppins', sans-serif;
     color: #fff;
 
+}
+
+/* JAVASCRIPT */
+
+.js [data-animate="scroll"] {
+    opacity: 0;
+    transition: 1s;
+    transform: translate3d(0, 32px, 0);
+
+}
+
+.js [data-animate="scroll"].ativo {
+    opacity: 1;
+    transform: none;
+}
+
+
+/* MENU HAMBUGUER */
+
+[data-menu="hamburguer"] {
+    display: none;
+}
+
+@media only screen and (max-width: 750px) {
+    .header {
+        height: 4.25rem;
+        box-sizing: border-box;
+    }
+
+    .js .header-container {
+        flex-wrap: nowrap;
+    }
+
+
+    .js [data-menu="hamburguer"] {
+        display: flex;
+        align-items: center;
+        padding: 0px;
+        border: none;
+        background: none;
+        outline: none;
+        font-family: "Poppins", sans-serif;
+        color: white;
+        text-transform: uppercase;
+        font-size: 1rem;
+        cursor: pointer;
+        margin-left: 1rem;
+        position: relative;
+    }
+
+    .js [data-menu="hamburguer"]::after {
+        content: '';
+        display: inline-block;
+        width: 2rem;
+        height: 0.125rem;
+        background: #fff;
+        margin-left: 1rem;
+        box-shadow: 0 0.5rem #fff, 0 -0.5rem #fff;
+    }
+
+    .js [data-menu="lista"] {
+        display: none;
+        position: absolute;
+        top: 4.25rem;
+        right: 1rem;
+        background: #fff;
+        width: 200px;
+        padding: 1rem;
+        border-radius: 0 0 5px 5px;
+        border: 1px solid var(--white-3);
+        box-sizing: border-box;
+        z-index: 100;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.08);
+    }
+
+    .js [data-menu="lista"].ativo {
+        display: block;
+       
+    }
+
+   .alinhar {
+        margin-left: 5px;
+    }
+
+    .js [data-menu="lista"] li + li {
+        padding-left: 0px;
+        padding-top: 0.5rem;
+        margin-top: 0.5rem;
+        border-top: 1px solid var(--white-3);
+    }
+
+    .js [data-menu="lista"] li a {
+        color: var(--black-1);
+        font-size: 0.875rem;
+        text-transform: none;
+        border: none;
+        transition: 0.1s ease-out;
+        margin-left: 0rem;
+    }
+
+    .js [data-menu="lista"] li:first-child {
+        margin-left: 15px;
+    }
+
+    
+
+    .js [data-menu="lista"] li a:hover {
+        color: var(--white-3);
+    }
+
+}
+
+/* FORMULARIO */
+
+#form-error {
+    color: tomato;
+}
+
+#form-success {
+    color: var(--green-2);
 }

@@ -1,10 +1,15 @@
 /* CONTATO */
 
-.contato {
-    background: url(../img/bg-contato.jpg) no-repeat center center;
+.contato-main {
+    background-image: url('../img/bg-contato.jpg');
     padding: 0px;
+    background-size: cover;
+    height: 500px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    color: #fff;
 }
-
 /* WHATSAP*/
 
 .wpp-box {
@@ -20,6 +25,10 @@
     border: 1px solid var(--white-3);
     margin: 0 auto;
     text-align: left;
+}
+
+.wpp {
+    text-align: center;
 }
 
 /* ATEDIMENTO*/
@@ -42,8 +51,10 @@
     border: 1px solid var(--white-3);
     border-radius: 5px;
     padding: 2rem;
+    width: 100%;
     max-width: 480px;
     box-sizing: border-box;
+    align-self: start;
 }
 
 .form label, form input, .form select, .form textarea, .form button {
@@ -117,8 +128,9 @@
 .dados a, .dados p {
     font-size: 1.125rem;
     font-style: italic;
-    counter-reset: var(--black-2);
+    color: var(--black-2);
     opacity: 0.8;
+    
 }
 
 .dados li + li {
@@ -145,3 +157,4 @@
 .mapa img:hover {
     opacity: 0.6;
 }
+

@@ -1,14 +1,19 @@
 /* PASSEIOS */
 
-.passeios {
-    background: url("../img/bg-passeios.jpg") no-repeat center center;
+.passeios-main {
+    background-image: url('../img/bg-passeios.jpg');
     padding: 0px;
+    background-size: cover;
+    height: 500px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    color: #fff;
 }
 
 .passeios-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-
     gap: 1rem;
 }
 

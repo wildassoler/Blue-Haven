@@ -9,11 +9,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
+    <meta name="description" content="Agende salto de paraquedas, voo de asa-delta e passeio de balão." />
+    <meta property="og:title" content="Blue Heaven | Passeios" />
+    <meta property="og:description" content="Agende salto de paraquedas, voo de asa-delta e passeio de balão." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.tigercodes.com.br/projetos/blue-heaven/" />
+    <meta property="og:image" content="https://www.tigercodes.com.br/projetos/blue-heaven/img/og-blue-heaven.png" />
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/sobre.css">
     <link rel="stylesheet" href="css/passeios.css">
     <link rel="stylesheet" href="css/trabalhe-conosco.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+
+    <script>document.documentElement.classList.add("js");</script>
 
     <title>Blue Heaven | Passeios</title>
 </head>
@@ -22,7 +34,8 @@
     <header class="header">
         <nav class="container header-container">
             <a href="./"> <img src="img/blue-heaven.svg" alt="Logo da Blue blue-heaven"></a>
-            <ul>
+            <button data-menu="hamburguer" aria-controls="menu">Menu</button>
+            <ul data-menu="lista" id="menu">
                 <li><a href="./">Home</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
                 <li><a class="ativo" href="passeios.html">Passeios</a></li>
@@ -30,14 +43,14 @@
             </ul>
         </nav>
     </header>
-    <section class="main passeios">
-        <div class="container">
+    <section class="passeios-main">
+        <div class="container" data-animate="scroll">
             <h1>Passeios</h1>
             <p>A aventura esta la fora.</p>
         </div>
     </section>
 
-    <section class="container">    
+    <section class="container" data-animate="scroll">    
         <h1 class="titulo"> Conheca nossas atracoes</h1>
         <div class="passeios-container">
             <img src="img/paraquedas-passeios.jpg" alt="paraquedas">
@@ -57,7 +70,7 @@
     </section>
 
     <section class="asa-delta">
-        <div class=" container passeios-container">
+        <div class=" container passeios-container" data-animate="scroll">
             <img src="img/asa-delta-passeios.jpg" alt="asa-delta">
             <div class="info">
                 <h2>Paraquedas</h2>
@@ -73,7 +86,7 @@
             </div>
         </div>
     </section>
-    <section class="container passeios-container">
+    <section class="container passeios-container" data-animate="scroll">
             <img src="img/balonismo-passeios.jpg" alt="Balonismo">
             <div class="info">
                 <h2>Balonismo</h2>
@@ -90,7 +103,7 @@
     </section>
 
     <section class="galeria">
-        <div class="container">
+        <div class="container" data-animate="scroll">
             <h1 class="titulo">Galeria de fotos</h1>
             <ul class="galeria-lista">
                 <li><img src="img/paraquedas.jpg" alt="balonismo"></li>
@@ -144,6 +157,6 @@
             <p>Este site é um projeto Tiger Codes. Mais informacoes em tigercodes.com.br</p>
         </div>
     </footer>
-
+    <script src="./js/script.js" type="module"></script>
 </body>
 </html>
