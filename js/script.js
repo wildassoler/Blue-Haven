@@ -15,3 +15,12 @@ const formMessage = new FormMessage({
   success: "<div id='form-success'><h2>Mensagem enviada.</h2><p>Agradecemos o seu contato e retornaremos em breve.</p></div>", // Mensagem de sucesso.
 });
 formMessage.init();
+
+const btn = document.querySelector('.btn-flute');
+const container = document.querySelector('body');
+
+btn.onclick = function()
+{
+  this.classList.toggle('active')
+  container.classList.toggle('active')
+}
