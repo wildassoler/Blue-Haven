@@ -165,8 +165,6 @@ img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
-    
-   
 }
 
 .passeios-home-lista li {
@@ -401,7 +399,6 @@ img {
 .copyright p {
     font-family: 'Poppins', sans-serif;
     color: #fff;
-
 }
 
 /* JAVASCRIPT */
@@ -418,7 +415,6 @@ img {
     transform: none;
 }
 
-
 /* MENU HAMBUGUER */
 
 [data-menu="hamburguer"] {
@@ -434,7 +430,6 @@ img {
     .js .header-container {
         flex-wrap: nowrap;
     }
-
 
     .js [data-menu="hamburguer"] {
         display: flex;
@@ -506,7 +501,6 @@ img {
         margin-left: 15px;
     }
 
-    
 
     .js [data-menu="lista"] li a:hover {
         color: var(--white-3);
@@ -523,7 +517,6 @@ img {
 #form-success {
     color: var(--green-2);
 }
-
 
 /* btn-flute */
 
@@ -550,7 +543,6 @@ img {
     border-left-width: 5px;
     transform: translateY(-50%);
     margin-left: 2px;
-
 }
 
 .btn-flute.active:before {
@@ -565,8 +557,6 @@ img {
     border-left-width: 5px;
     transform: translateY(-50%);
 }
-
-
 
 body.active {
     background: var(--black-1);
