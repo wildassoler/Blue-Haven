@@ -9,7 +9,7 @@ html {
     --green-3: #599c06;
     --white-1: #fafbfc;
     --white-2: #ecedee;
-    --white-3: #dcddde;
+    --white-3: #c8cacc;
     --black-1: #404b52;
     --black-2: #313842;
     --black-3: #232c33;
@@ -523,7 +523,7 @@ img {
 .btn-flute {
     width: 50px;
     height: 28px;
-    border: 2px solid var(--blue1);
+    border: 3px solid var(--green-3);
     border-radius: 60px;
     position: fixed;
     cursor: pointer;
@@ -563,4 +563,6 @@ body.active {
     transition: ease-in .3s;
     transition: background 0.5s;
 }
+
+
 
